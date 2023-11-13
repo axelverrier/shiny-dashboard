@@ -40,12 +40,12 @@ source("value_box.R")
 ui <- page_sidebar(
   theme = bs_theme(version = 5),
   title="Descriptive statistics of the dataset",
-  sidebar= sidebar(
-    title = "Plot controls",
-    varSelectInput(
-      "yvar", "Select variable", data[, c(5,6,7,9)]
-    )
-  ),
+  #sidebar= sidebar(
+  #  title = "Plot controls",
+  #  varSelectInput(
+  #    "yvar", "Select variable", data[, c(5,6,7,9)]
+  #  )
+  #),
   layout_columns(
     fill=FALSE, 
     !!!values
