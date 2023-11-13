@@ -61,13 +61,7 @@ server <- function(input, output){
       geom_density(adjust=1.5, alpha=.4)+
       theme(axis.text = element_text(size = 15), 
             axis.title = element_text(size = 18),
-            legend.text = element_text(size = 15))+
-      lapply(occupations, function(col_name) {
-        geom_vline(data = data[data[[col_name]] == 1, ], 
-                   aes(xintercept = mean(wage)), 
-                   color = "black", 
-                   linetype = "dashed")
-      })
+            legend.text = element_text(size = 15))
       
     
     )
